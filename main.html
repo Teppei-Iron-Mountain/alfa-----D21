@@ -108,10 +108,12 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>店員の話</h2>
+              <p class="text-center">「あそこにいる犬たちが連れて行かれるのはいつだっけ？」<br>
+                僕はできるだけ店員の近くに行き立ち聞きを続けた...<br>
+                何か紙を見せていた。店員がいなくなった隙に僕はその手紙を見てしまった...<br>
+                手紙の内容は「□日後行く」という文章だったその下には次の謎があった、<br>
+                どうやら□日後にこんな事している悪の元凶がここに来るらしい。</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -182,9 +184,9 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：2　謎が解けた。</div>
+              <div class="clear-message__content">僕らは犬たちを助けるために、作戦を立てた。<br>
+                「まず人面犬が騒ぐ、その後僕が店の奥へそれから金庫を開ける」人面犬が言うにはそこに機密情報などが入っているらしい。</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
